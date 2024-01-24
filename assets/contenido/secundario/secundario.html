@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/styleHome.css">
+    <title>Batman</title>
+</head>
+<body>
+    <header>
+        <a href="../../inicio.html"><img src="../../img/icono.jpg"alt=""></a>
+        <a href=""><h1>Nesfli</h1></a>
+     </header>
+        <hr>
+        <div class="search">
+            <input type="text" id="search-box" placeholder="Buscar...">
+         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" onclick="searchFile()">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </div>
+        
+          <div class="nikelodeon">
+            <a href="contenido/nikelodeon/nikelodeon.html"><img src="https://www.newscaststudio.com/wp-content/uploads/2023/07/NIC_REB_PR-Still-Splat.jpg" alt=""></a>
+          </div>
+        
+        <section>
+            <a href="contenido/thundermans.html" target="_blank"><img src="https://assets.nick.com/uri/mgid:arc:imageassetref:shared.nick.us:5ea59acb-b9f8-46a1-8b28-de1d7ed0009d?quality=0.7&gen=ntrn&legacyStatusCode=true" alt="The Thundermans"></a>
+            <a href="http://" target="_blank"><img src="https://media.vandal.net/m/5595/2013525123944_1.jpg" alt="Billy y Mandy"></a>
+            <a href="contenido/lucifer.html" target="_blank"><img src="https://www.themoviedb.org/t/p/original/ppM8Pl6e8JIr39HPLRFgqDH3Vf1.jpg" alt="Los Chicos Del Barrio"></a> 
+            <a href="BreakingBad/breakingbad.html" target="_blank"> <img src="https://www.themoviedb.org/t/p/original/yLn8nI9Ec3LZ1WflYxo9MjF4BBg.jpg" alt="Coraje El Perro Cobarde"></a>
+            <a href="theBoys/theboys.html" target="_blank"> <img src="https://m.media-amazon.com/images/M/MV5BNjQ1NjBhZmQtZTlkOC00YTM2LWE3NjgtNmZjOWJhMjRkMTY1XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg" alt="Teen Titans - Los jovenes Titanes"></a>
+            <a href="Dr.House/drHouse.html" target="_blank"> <img src="https://fontmeme.com/images/ben-10-font.jpg" alt="Ben 10"></a>
+            <a href="Peacemaker/peacemaker.html" target="_blank"> <img src="https://m.media-amazon.com/images/M/MV5BYmQwYTc1ZDEtMzU3My00OTIzLWE1YmEtYmUyMmMzZTI2ZWNlXkEyXkFqcGdeQXVyOTgwMzk1MTA@._V1_.jpg" alt="Ben 10 Alien Force"></a>
+            <a href="Blinders.html" target="_blank"> <img src="https://pics.filmaffinity.com/Peaky_Blinders_Serie_de_TV-549874356-large.jpg" alt="Peaky Blinders"></a>
+            <a href="Blinders.html" target="_blank"> <img src="https://image.tmdb.org/t/p/w500/xHcUMez2b1QiMGQYCuQTAlqwDEe.jpg" alt="Piratas Del Caribe"></a>
+            <a href="Blinders.html" target="_blank"> <img src="https://pics.filmaffinity.com/Matrix-155050517-large.jpg" alt="Matrix"></a>
+        
+        </section>
+        <!-- JavaScript para la búsqueda en tiempo real -->
+        <script>
+            // Obtener el campo de búsqueda
+            const searchBox = document.getElementById("search-box");
+          
+            // Agregar un evento de escucha de entrada en el campo de búsqueda
+            searchBox.addEventListener("input", function() {
+              // Obtener el valor actual del campo de búsqueda
+              const searchText = searchBox.value.toLowerCase();
+          
+              // Obtener todas las imágenes en la página
+              const images = document.getElementsByTagName("img");
+          
+              // Recorrer todas las imágenes y ocultar las que no coincidan con el término de búsqueda
+              for (let i = 0; i < images.length; i++) {
+                const image = images[i];
+                const altText = image.alt.toLowerCase();
+          
+                if (altText.includes(searchText)) {
+                  // Si la imagen coincide con el término de búsqueda, mostrarla
+                  image.style.display = "inline-block";
+                } else {
+                  // Si la imagen no coincide con el término de búsqueda, ocultarla
+                  image.style.display = "none";
+                }
+              }
+            });
+          </script>
+        
+        <script src="../../search.js"></script>
+        </body>
+        </html>

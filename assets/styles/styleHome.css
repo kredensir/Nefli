@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, rgb(43, 19, 19), rgb(34, 2, 61), rgb(1, 1, 26));
+    padding: 3%;
+}
+header a img{
+    width: 100px;
+    border-radius: 100px;
+    }
+    header a{
+        text-decoration: none;
+    }
+    h1{
+        color:rgb(34, 10, 49);
+        background: rgb(255, 255, 255);
+        border-radius: 50px;
+    }
+
+header{
+text-align: center;
+}
+a{
+    text-decoration: none;
+}
+header a svg{
+    width: 35px;
+    color: aliceblue;
+    margin: 15px;
+}
+/*search*/
+input{
+    height: 40px;
+    width: 80%;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    border: none;
+}
+
+.search{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.search svg{
+    width: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+.search svg:hover{
+color: rgb(2, 37, 46);
+border-radius: 50px;
+transform: scale(1.3);
+}
+#search{
+    border: none;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: rgb(51, 51, 51);
+}
+/*nikelodeon banner*/
+.secundario{
+    text-align: center;
+}
+.secundario img{
+    width: 45%;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 5%;
+    position: relative;
+}
+/*contenidos*/
+section img{
+    width: 100px;
+}
+section{
+    text-align: center;
+}
+section img{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 5px;
+    position: relative;
+}
+section img:hover{
+    box-shadow: rgb(245, 238, 235) 0px 0px 10px 5px;
+}
+@media screen and (max-width: 600px) {
+    body{
+        padding: 1%;
+        }
+    section img{
+        width: 110px;
+        height: 200px;
+        object-fit: cover;
+        margin: 2px;
+        position: relative;
+    }
+}

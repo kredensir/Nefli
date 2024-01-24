@@ -8,6 +8,7 @@ body{
     background-image: url("https://m.media-amazon.com/images/M/MV5BNDJjMzc4NGYtZmFmNS00YWY3LThjMzQtYzJlNGFkZGRiOWI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg");
     backdrop-filter: blur(10px);
 }
+
 header {
     display: flex;
     text-align: center;
@@ -17,7 +18,6 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 10px 20px 70px 10px rgb(24, 6, 37);
 }
-
 header a img{
     width: 100px;
     border-radius: 100px;
@@ -30,23 +30,23 @@ header a img{
         background: rgb(255, 255, 255);
         border-radius: 50px;
     }
+
+header{
+text-align: center;
+}
 a{
     text-decoration: none;
 }
-header svg{
+header a svg{
     width: 35px;
     color: aliceblue;
     margin: 15px;
 }
-.redes{
-    display: flex;
-    justify-content: space-between;
-}
 
 /*search*/
 input{
-    height: 50px;
-    width: 40%;
+    height: 40px;
+    width: 80%;
     border-radius: 30px;
     border: none;
     text-align: center;
@@ -55,13 +55,12 @@ input{
 
 .search{
     display: flex;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 40px;
+    margin-bottom: 1%;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
 }
-.botons.search svg{
+.search svg{
     width: 20px;
     color: rgb(255, 255, 255);
     margin-left: 10px;
@@ -77,11 +76,6 @@ transform: scale(1.3);
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     color: rgb(51, 51, 51);
-}
-.botons{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 
@@ -104,10 +98,9 @@ nav a,#btnAbrirModal{
     color: rgba(255, 255, 255, 0.885);
     background-color: rgba(255, 255, 255, 0.098);
     backdrop-filter: blur(10px);
-
-    height: 6%;
+    width: 100%;
     border-radius:10px;
-    padding: 15%;
+    padding: 3%;
 }
 nav a:hover{
 cursor: pointer;
@@ -120,8 +113,8 @@ background-color: rgb(255, 255, 255);
  .overlay {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -133,26 +126,36 @@ background-color: rgb(255, 255, 255);
 .modal {
     color: aliceblue;
     text-align: center;
-    display: none;
+    display:none;
     position: fixed;
-    border: 1px solid white;
-    background-color: (90deg, rgb(43, 19, 19), rgb(34, 2, 61), rgb(1, 1, 26));
+    top: 5%;
+    background-color: #ffffff3a;
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 50vh;
-    width: 60%;
+    width: 80%;
+    margin: 10%;
     z-index: 5;
 }
 .modal a{
     text-decoration: none;
     color: aliceblue;
 }
+#cerrar{
+    background-color: rgba(18, 137, 158, 0.164);
+    color: aliceblue;
+    border: 0.1px solid rgba(255, 255, 255, 0.877);
+    padding: 3%;
+    border-radius: 8px;
+    bottom: 0px;
+}
+button svg {
+    color: rgb(255, 255, 255);
+    width: 20px;
+}
 /* Estilo para el botón de abrir el cuadro modal */
-
-
-
 
 
 
@@ -174,11 +177,10 @@ iframe{
     border-radius: 30px;
 }
 hr{
-    background: linear-gradient(90deg, rgb(43, 19, 19), rgb(190, 124, 245), rgb(1, 1, 26));
+    background: linear-gradient(90deg, rgba(92, 10, 10, 0), rgb(135, 32, 219), rgba(77, 11, 138, 0));
     border: none;
     border-radius: 30px;
-    margin: 0px 20%;
-    height: 10px;
+    height: 15px;
     width: 100%;
     margin: 20px 0px;
 }

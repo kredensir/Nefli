@@ -40,39 +40,8 @@
     <a href="Blinders.html" target="_blank"> <img src="https://pics.filmaffinity.com/Peaky_Blinders_Serie_de_TV-549874356-large.jpg" alt="Peaky Blinders"></a>
     <a href="Blinders.html" target="_blank"> <img src="https://image.tmdb.org/t/p/w500/xHcUMez2b1QiMGQYCuQTAlqwDEe.jpg" alt="Piratas Del Caribe"></a>
     <a href="Blinders.html" target="_blank"> <img src="https://pics.filmaffinity.com/Matrix-155050517-large.jpg" alt="Matrix"></a>
-
 </section>
 
-
-
-<!-- JavaScript para la búsqueda en tiempo real -->
-<script>
-    // Obtener el campo de búsqueda
-    const searchBox = document.getElementById("search-box");
-  
-    // Agregar un evento de escucha de entrada en el campo de búsqueda
-    searchBox.addEventListener("input", function() {
-      // Obtener el valor actual del campo de búsqueda
-      const searchText = searchBox.value.toLowerCase();
-  
-      // Obtener todas las imágenes en la página
-      const images = document.getElementsByTagName("img");
-  
-      // Recorrer todas las imágenes y ocultar las que no coincidan con el término de búsqueda
-      for (let i = 0; i < images.length; i++) {
-        const image = images[i];
-        const altText = image.alt.toLowerCase();
-  
-        if (altText.includes(searchText)) {
-          // Si la imagen coincide con el término de búsqueda, mostrarla
-          image.style.display = "inline-block";
-        } else {
-          // Si la imagen no coincide con el término de búsqueda, ocultarla
-          image.style.display = "none";
-        }
-      }
-    });
-  </script>
 
 <script src="search.js"></script>
 </body>
